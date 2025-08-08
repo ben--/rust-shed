@@ -122,7 +122,7 @@ impl ScubaSample {
 
     /// Return an `Entry` from the internal `HashMap` of sample data under the
     /// provided key.
-    pub fn entry<K: Into<String>>(&mut self, key: K) -> Entry<String, ScubaValue> {
+    pub fn entry<'a, K: Into<String>>(&'a mut self, key: K) -> Entry<'a, String, ScubaValue> {
         self.values.entry(key.into())
     }
 
