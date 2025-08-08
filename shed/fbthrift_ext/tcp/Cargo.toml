@@ -16,7 +16,7 @@ path = "lib.rs"
 [dependencies]
 anyhow = "1.0.98"
 bytes = { version = "1.10", features = ["serde"] }
-fbthrift = { version = "0.0.1+unstable", git = "https://github.com/facebook/fbthrift.git", branch = "main" }
+fbthrift = { version = "0.0.1+unstable", git = "https://github.com/ben--/fbthrift.git", branch = "compile-fix" }
 fbthrift_framed = { version = "0.1.0", path = "../framed" }
 fbthrift_util = { version = "0.1.0", path = "../util" }
 futures = { version = "0.3.31", features = ["async-await", "compat"] }
